@@ -19,18 +19,6 @@
       <div class="col l3 s12">
         <h5 class="white-text">Connect</h5>
         <ul>
-          <!--
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-          -->
           <li><a class="white-text" href="#!">Link</a></li>
         </ul>
       </div>
@@ -47,7 +35,11 @@
     </script>
   </div>
 </footer>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="{{ "/js/materialize.js" | prepend: site.baseurl }}"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="{{ "/js/history.adapter.jquery.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/jquery.validate.min.js" | prepend: site.baseurl }}"></script>
+{% if page.lang == 'de' %}
+  <script src="{{ "/js/messages_de.js" | prepend: site.baseurl }}"></script>
+{% endif %}
+<script src="{{ "/js/materialize.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/init.js" | prepend: site.baseurl }}"></script>

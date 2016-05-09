@@ -1,7 +1,16 @@
-{% assign nameField = name %}
-{% assign messageField = message %}
+{% if page.lang == 'de' %}
+    {% assign nameField = 'Vorname Name' %}
+    {% assign messageField = 'Nachricht' %}
+    {% assign title = 'Kontakt' %}
+{% endif %}
+{% if page.lang == 'en' %}
+    {% assign nameField = 'Name' %}
+    {% assign messageField = 'Message' %}
+    {% assign title = 'Contact' %}
+{% endif %}
 <div class="row">
     <form id="contactform" method="POST" class="col s12">
+        <h3>{{title}}</h3>
         <div class="row">
             <div class="input-field col s12">
                 <input id="name" type="text" class="validate" name="name" required="">

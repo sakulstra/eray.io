@@ -1,37 +1,43 @@
 <header class="site-header">
 
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="{{ site.baseurl }}/{{ site.index[page.lang] }}" class="brand-logo">{{ site.title[page.lang] }}</a>
-      <ul class="right hide-on-med-and-down">
-          {% assign pages=site.pages | where:"lang", page.lang %}
-          {% for my_page in pages %}
-            {% unless my_page.exclude_from_nav %}
-              {% if my_page.title %}
-                <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-              {% endif %}
-            {% endunless %}
-          {% endfor %}
-      </ul>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="{{ site.baseurl }}/{{ site.index[page.lang] }}" class="brand-logo">
+                <img class="responsive-img" src="{{ "/img/logo/Energiesteg_rgb.png" | prepend: site.baseurl }}" alt="E.Ray Logo"/>
+            </a>
+            <div class="right">
+                <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Language</a>
+                <ul id='dropdown1' class='dropdown-content'>
+                    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                    {% for post in posts %} <li><a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a></li> {% endfor %}
 
-      <ul id="nav-mobile" class="side-nav">
-          {% assign pages=site.pages | where:"lang", page.lang %}
-          {% for my_page in pages %}
-              {% if my_page.title %}
+                    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                    {% for page in pages %} <li><a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a></li> {% endfor %}
+                </ul>
+            </div>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">Home</a></li>
+                {% assign pages=site.pages | where:"lang", page.lang %}
+                {% for my_page in pages %}
+                {% unless my_page.exclude_from_nav %}
+                {% if my_page.title %}
                 <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-              {% endif %}
-          {% endfor %}
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+                {% endif %}
+                {% endunless %}
+                {% endfor %}
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">Home</a></li>
+                {% assign pages=site.pages | where:"lang", page.lang %}
+                {% for my_page in pages %}
+                {% if my_page.title %}
+                <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
 
 </header>
-
-<div class="wrapper" style="text-align: right; line-height: 2em; position: absolute; z-index: 1; right: 0;">
-  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-  {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
-
-  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
-</div>
