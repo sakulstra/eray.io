@@ -1,13 +1,33 @@
 {% assign nameField = name %}
 {% assign messageField = message %}
-<form id="contactform" method="POST">
-    <input type="text" name="name" placeholder="{{nameField}}">
-    <input type="email" name="_replyto" placeholder="Your email">
-    <input type="hidden" name="_subject" value="Website contact" />
-    <textarea name="message" placeholder="{{messageField}}"></textarea>
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Send">
-</form>
+<div class="row">
+    <form id="contactform" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="text" class="validate" name="name" required="">
+                <label for="name">{{nameField}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate" name="_replyto" required="">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea name="message" id="textarea1" class="materialize-textarea" required=""></textarea>
+                <label for="textarea1">{{messageField}}</label>
+            </div>
+        </div>
+        <input type="hidden" name="_subject" value="Website contact" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </form>
+</div>
+
 <script>
     var contactform =  document.getElementById('contactform');
     contactform.setAttribute('action', '//formspree.io/' + 'lukasstrassel' + '@' + 'googlemail' + '.' + 'com');

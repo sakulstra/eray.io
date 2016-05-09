@@ -3,51 +3,63 @@
 ---
 @charset "utf-8";
 
+@import
+"material/materialize"
+;
 
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+nav ul a,
+nav .brand-logo {
+        color: #444;
 }
 
+p {
+        line-height: 2rem;
+}
 
+.button-collapse {
+        color: #26a69a;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.parallax-container {
+        min-height: 380px;
+        line-height: 0;
+        height: auto;
+        color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+        width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+        .parallax-container .section {
+                position: absolute;
+                top: 40%;
+        }
+        #index-banner .section {
+                top: 10%;
+        }
+}
+
+@media only screen and (max-width : 600px) {
+        #index-banner .section {
+                top: 0;
+        }
+}
+
+.icon-block {
+        padding: 0 15px;
+}
+.icon-block .material-icons {
+        font-size: inherit;
+}
+
+footer.page-footer {
+        margin: 0;
+}
+
+label.error{
+  color: red;
+  position: relative;
+  top:0;
+  left:0;
+}
