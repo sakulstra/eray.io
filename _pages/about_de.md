@@ -6,4 +6,4 @@ ref: about
 lang: de
 ---
 
-yay
+Abut text de
