@@ -19,7 +19,14 @@
       <div class="col l3 s12">
         <h5 class="white-text">Connect</h5>
         <ul>
-          <li><a class="white-text" href="#!">Link</a></li>
+          <li>
+            <a class="white-text" href="#!"><i class="material-icons left">videocam</i>Youtube</a>
+          </li>
+          <li class="clearfix"></li>
+          <li>
+            <a class="white-text" href="https://www.facebook.com/erayenergy" target="_blank"><i class="material-icons left">thumb_up</i></a>
+            <div class="fb-like" data-href="https://www.facebook.com/erayenergy" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,3 +55,11 @@
 {% endif %}
 <script src="{{ "/js/materialize.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/init.js" | prepend: site.baseurl }}"></script>
+<div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.6&appId=231867430179229";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
