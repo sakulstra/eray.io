@@ -7,15 +7,18 @@
 
 # Site settings
 title:
-  en: E-ray
-  de: E-ray
+  en: e.Ray
+  de: e.Ray
+  en: e.Ray
 email: your-email@domain.com
 description:
   en: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
   de: Wir sind tolle studenten die awesome shit producen...
+  es: hollla
 index:
   en:
   de: index_de.html
+  es: index_es.html
 feed:
   en: /feed.xml
   fr: /flux.xml
