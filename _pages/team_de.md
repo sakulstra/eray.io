@@ -6,30 +6,66 @@ ref: team
 lang: de
 ---
 
-<div class="row">
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+<div class="row" id="team">
+    <div class="col l3 m6">
+        <figure>
+            <img class="responsive-img z-depth-3" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+            <figcaption>
+                <h4>Lukas Strassel</h4>
+            	<span>Maid for everything</span>
+            	<a href="#linkedIn">LinkedIn</a>
+            </figcaption>
+        </figure>
     </div>
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+    <div class="col l3 m6">
+        <figure>
+            <img class="responsive-img z-depth-3" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+            <figcaption>
+                <h4>Lukas Strassel</h4>
+            	<span>Maid for everything</span>
+            	<a href="#linkedIn">LinkedIn</a>
+            </figcaption>
+        </figure>
     </div>
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+    <div class="col l3 m6">
+        <figure>
+            <img class="responsive-img z-depth-3" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+            <figcaption>
+                <h4>Lukas Strassel</h4>
+            	<span>Maid for everything</span>
+            	<a href="#linkedIn">LinkedIn</a>
+            </figcaption>
+        </figure>
     </div>
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+    <div class="col l3 m6">
+        <figure>
+            <img class="responsive-img z-depth-3" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+            <figcaption>
+                <h4>Lukas Strassel</h4>
+            	<span>Maid for everything</span>
+            	<a href="#linkedIn">LinkedIn</a>
+            </figcaption>
+        </figure>
     </div>
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+    <div class="col l3 m6">
+        <figure>
+            <img class="responsive-img z-depth-3" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+            <figcaption>
+                <h4>Lukas Strassel</h4>
+            	<span>Maid for everything</span>
+            	<a href="#linkedIn">LinkedIn</a>
+            </figcaption>
+        </figure>
     </div>
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
-    </div>
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
-    </div>
-    <div class="col l3">
-        <img class="responsive-img" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+    <div class="col l3 m6">
+        <figure>
+            <img class="responsive-img z-depth-3" src="{{ "/img/team/lukas.jpg" | prepend: site.baseurl }}" alt="lukas"/>
+            <figcaption>
+                <h4>Lukas Strassel</h4>
+            	<span>Maid for everything</span>
+            	<a href="#linkedIn">LinkedIn</a>
+            </figcaption>
+        </figure>
     </div>
 </div>
 
