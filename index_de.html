@@ -20,7 +20,6 @@ lang: de
 </div>
 
 <div class="container">
-
     <div class="row">
         <div class="col l2 hide-on-med-and-down">&nbsp;</div>
         <div class="col l8 m12">
@@ -59,13 +58,13 @@ lang: de
     <div class="col l6 m12">
         <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">nature</i></h2>
-        <h4 class="center">DIE BEFESTIGUNG AM BAUM</h4>
-        <p class="flow-text">
-            Die Kräfte der Anlage werden durch die Bäume aufgefangen.
-            So vermeiden wir unnötige bauliche Maßnahmen am Flussufer.
-            Die Hartschaumpolster schonen die Rinde und verteilen die Belastung gleichmäßig.
-        </p>
-            </div>
+            <h4 class="center">DIE BEFESTIGUNG AM BAUM</h4>
+            <p class="flow-text">
+                Die Kräfte der Anlage werden durch die Bäume aufgefangen.
+                So vermeiden wir unnötige bauliche Maßnahmen am Flussufer.
+                Die Hartschaumpolster schonen die Rinde und verteilen die Belastung gleichmäßig.
+            </p>
+        </div>
     </div>
     <div class="col l6 m12">
         <img class="responsive-img" src="{{"/img/penandpaper/querschnitt-rotor-825x510.jpg" | prepend: site.baseurl}}" />
@@ -95,8 +94,8 @@ lang: de
     <div class="col l12 m12">
         <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-        <h4 class="center">UNSERE PARTNER</h4>
-            </div>
+            <h4 class="center">UNSERE PARTNER</h4>
+        </div>
         <h5 class="center flow-text">e.Ray wird gefördert durch das EXIST Gründerstipendium vom BMWi und dem europäischen Sozialfonds.</h5>
         <div class="hide-on-med-and-down">
             <div class="row valign-wrapper">
@@ -125,7 +124,7 @@ lang: de
                 </div>
             </div>
         </div>
-        <div class="hide-on-large-only">
+        <div class="hide-on-large-only hide-on-small-only">
             <div class="row valign-wrapper">
                 <div class="col m6 valign">
                     <img class="responsive-img" src="{{"/img/partner/bundesministerium.jpg" | prepend: site.baseurl}}" />
@@ -151,12 +150,38 @@ lang: de
                 </div>
             </div>
         </div>
+        <div class="hide-on-med-and-up">
+            <div class="row valign-wrapper">
+                <div class="col s4 valign">
+                    <img class="responsive-img" src="{{"/img/partner/bundesministerium.jpg" | prepend: site.baseurl}}" />
+                </div>
+                <div class="col s4 valign">
+                    <img class="responsive-img" src="{{"/img/partner/Logo-ESF-cmyk.svg" | prepend: site.baseurl}}" />
+                </div>
+                <div class="col s4 valign">
+                    <img class="responsive-img" src="{{"/img/partner/Logo-EXIST.svg" | prepend: site.baseurl}}" />
+                </div>
+            </div>
+            <div class="row valign-wrapper">
+                <div class="col s4 valign">
+                    <img class="responsive-img" src="{{"/img/partner/Dassualt_Systems-Solidworks_Colour.svg" | prepend: site.baseurl}}" />
+                </div>
+                <div class="col s4 valign">
+                    <img class="responsive-img" src="{{"/img/partner/sla.jpg" | prepend: site.baseurl}}" />
+                </div>
+                <div class="col s4 valign">
+                    <img class="responsive-img" src="{{"/img/partner/TU_Darmstadt_Logo.svg" | prepend: site.baseurl}}" />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="grey lighten-3 z-depth-1">
-    <div class="container row" style="margin-bottom: 0;">
-        <div class="col l12 m12">
-            {% include contactform.html %}
+    <div class="container">
+        <div class="row" style="margin-bottom: 0;">
+            <div class="col s12">
+                {% include contactform.html %}
+            </div>
         </div>
     </div>
 </div>

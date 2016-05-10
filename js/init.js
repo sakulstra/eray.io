@@ -3,6 +3,12 @@
     $('.button-collapse').sideNav({
       closeOnClick: true
     });
+      var options = [
+        {selector: '#top', offset: 1500, callback: function(){
+          $("#topScroller").removeClass('hide');
+        } },
+      ];
+      Materialize.scrollFire(options);
     $('.parallax').parallax();
     $("#contactform").validate({
       lang: 'de'
@@ -10,10 +16,10 @@
     $('a[href^="#"]').click(
       function(e) {
         e.preventDefault(); var dest = $(this).attr('href');
-        console.log(dest);
         $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
       }
     );
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
