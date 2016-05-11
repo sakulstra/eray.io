@@ -1,16 +1,15 @@
 {% if page.lang == 'de' %}
     {% assign nameField = 'Vorname Name' %}
     {% assign messageField = 'Nachricht' %}
-    {% assign title = 'Kontakt' %}
+    {% assign title = 'Kontaktieren sie uns!' %}
 {% endif %}
 {% if page.lang == 'en' %}
     {% assign nameField = 'Name' %}
     {% assign messageField = 'Message' %}
-    {% assign title = 'Contact' %}
+    {% assign title = 'Contact us!' %}
 {% endif %}
-<div class="row">
     <form id="contactform" method="POST">
-        <h3>{{title}}</h3>
+        <h4>{{title}}</h4>
         <div class="row">
             <div class="input-field col s12">
                 <input id="name" type="text" class="validate" name="name" required="">
@@ -35,7 +34,6 @@
             <i class="material-icons right">send</i>
         </button>
     </form>
-</div>
 
 <script>
     var contactform =  document.getElementById('contactform');
